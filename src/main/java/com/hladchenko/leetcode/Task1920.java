@@ -2,7 +2,6 @@
     Build Array from Permutation
     https://leetcode.com/problems/build-array-from-permutation/
  */
-
 package com.hladchenko.leetcode;
 
 import java.util.Arrays;
