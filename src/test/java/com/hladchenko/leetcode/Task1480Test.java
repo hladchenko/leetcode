@@ -7,18 +7,24 @@ import org.junit.Test;
 public class Task1480Test {
 
     //given
-    public static final int[] nums = {1, 2, 3, 4};
-    public static final int[] nums2 = {1, 1, 1, 1, 1};
-    public static final int[] nums3 = {3, 1, 2, 10, 1};
-    public static final int[] expected = {1, 3, 6, 10};
-    public static final int[] expected2 = {1, 2, 3, 4, 5};
-    public static final int[] expected3 = {3, 4, 6, 16, 17};
+    int[] nums;
+    int[] nums2;
+    int[] nums3;
+    int[] expected;
+    int[] expected2;
+    int[] expected3;
 
     Task1480 task1480;
 
     @Before
     public void setUp() {
         task1480 = new Task1480();
+        nums = new int[] {1, 2, 3, 4};
+        nums2 = new int[] {1, 1, 1, 1, 1};
+        nums3 = new int[] {3, 1, 2, 10, 1};
+        expected = new int[] {1, 3, 6, 10};
+        expected2 = new int[] {1, 2, 3, 4, 5};
+        expected3 = new int[] {3, 4, 6, 16, 17};
     }
 
     @Test

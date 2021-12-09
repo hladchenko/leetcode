@@ -30,10 +30,9 @@ public class Task1480 {
     }
 
     public int[] runningSumThirdApproach(int[] nums) {
-        int[] result = Arrays.copyOf(nums, nums.length);
-        for (int i = 1; i < result.length; i++) {
-            result[i] += result[i - 1];
+        for (int i = 1; i < nums.length; i++) {
+            nums[i] += nums[i - 1];
         }
-        return result;
+        return nums;
     }
 }
