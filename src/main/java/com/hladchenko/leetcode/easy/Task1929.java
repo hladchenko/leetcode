@@ -9,7 +9,7 @@
 
     https://leetcode.com/problems/concatenation-of-array/
  */
-package com.hladchenko.leetcode;
+package com.hladchenko.leetcode.easy;
 
 public class Task1929 {
 

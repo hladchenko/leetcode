@@ -3,7 +3,7 @@
      return indices of the two numbers such that they add up to target.
     https://leetcode.com/problems/two-sum/
  */
-package com.hladchenko.leetcode;
+package com.hladchenko.leetcode.easy;
 
 import java.util.Arrays;
 

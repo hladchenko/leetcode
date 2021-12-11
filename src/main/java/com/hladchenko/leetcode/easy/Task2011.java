@@ -9,7 +9,7 @@
     https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
  */
 
-package com.hladchenko.leetcode;
+package com.hladchenko.leetcode.easy;
 
 public class Task2011 {
 

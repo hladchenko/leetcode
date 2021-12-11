@@ -1,10 +1,9 @@
-package com.hladchenko.leetcode;
+package com.hladchenko.leetcode.medium.Task1476;
 
 import org.junit.Assert;
 import org.junit.Test;
-import com.hladchenko.leetcode.Task1476.SubrectangleQueries;
 
-public class Task1476Test {
+public class SubrectangleQueriesTest {
 
     @Test
     public void testSubrectangleQueriesClassFirstScenario() {

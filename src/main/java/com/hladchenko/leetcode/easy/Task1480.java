@@ -4,7 +4,7 @@
     https://leetcode.com/problems/running-sum-of-1d-array/
  */
 
-package com.hladchenko.leetcode;
+package com.hladchenko.leetcode.easy;
 
 import java.util.Arrays;
 

@@ -4,7 +4,7 @@
     https://leetcode.com/problems/defanging-an-ip-address/
  */
 
-package com.hladchenko.leetcode;
+package com.hladchenko.leetcode.easy;
 
 public class Task1108 {
     public String defangIPaddr(String address) {

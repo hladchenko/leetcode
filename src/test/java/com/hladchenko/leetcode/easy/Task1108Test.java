@@ -1,4 +1,4 @@
-package com.hladchenko.leetcode;
+package com.hladchenko.leetcode.easy;
 
 import org.junit.Assert;
 import org.junit.Test;
