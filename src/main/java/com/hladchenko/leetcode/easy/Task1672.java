@@ -13,8 +13,7 @@ import java.util.Arrays;
 public class Task1672 {
     public int maximumWealth(int[][] accounts) {
         return Arrays.stream(accounts)
-                .map(account -> Arrays.stream(account)
-                        .sum())
+                .map(account -> Arrays.stream(account).sum())
                 .max(Integer::compare)
                 .orElse(0);
     }
