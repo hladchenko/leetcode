@@ -12,7 +12,7 @@ public class Task1470Test {
         int[] nums = {2, 5, 1, 3, 4, 7};
         int[] nums2 = {1, 2, 3, 4, 4, 3, 2, 1};
         int[] nums3 = {1, 1, 2, 2};
-        int[] nums4 = {1, 1, 7, 9, 3, 5, 2,      1, 1, 7, 9, 3, 5, 2,};
+        int[] nums4 = {1, 1, 7, 9, 3, 5, 2, 1, 1, 7, 9, 3, 5, 2,};
         //when
         int[] actual = task1470.shuffle(nums, 3);
         int[] actual2 = task1470.shuffle(nums2, 4);
