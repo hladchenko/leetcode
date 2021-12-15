@@ -8,7 +8,6 @@
  */
 package com.hladchenko.leetcode.easy;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,6 +16,6 @@ public class Task1431 {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         return Arrays.stream(candies)
                 .mapToObj(kidCandies -> kidCandies + extraCandies >= Arrays.stream(candies).max().orElse(0))
-                .collect(Collectors.toCollection(ArrayList<Boolean>::new));
+                .collect(Collectors.toList());
     }
 }
