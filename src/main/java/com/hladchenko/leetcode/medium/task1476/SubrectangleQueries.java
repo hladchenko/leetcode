@@ -12,7 +12,7 @@
     https://leetcode.com/problems/subrectangle-queries/
  */
 
-package com.hladchenko.leetcode.medium.Task1476;
+package com.hladchenko.leetcode.medium.task1476;
 
 public class SubrectangleQueries {
 

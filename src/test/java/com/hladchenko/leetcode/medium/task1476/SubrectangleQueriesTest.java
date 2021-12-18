@@ -1,4 +1,4 @@
-package com.hladchenko.leetcode.medium.Task1476;
+package com.hladchenko.leetcode.medium.task1476;
 
 import org.junit.Assert;
 import org.junit.Test;
