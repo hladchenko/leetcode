@@ -20,12 +20,7 @@ public class Task1828 {
         int[] answer = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {
             for (int[] point : points) {
-                int x = point[0];
-                int y = point[1];
-                int x0 = queries[i][0];
-                int y0 = queries[i][1];
-                int R = queries[i][2];
-                if (pow(x - x0, 2) + pow(y - y0, 2) <= pow(R, 2)) {
+                if (pow(point[0] - queries[i][0], 2) + pow(point[1] - queries[i][1], 2) <= pow(queries[i][2], 2)) {
                     answer[i]++;
                 }
             }
