@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class Task1769Test {
     @Test
-    public void Move_balls_for_minimum_number_of_operations() {
+    public void Move_balls_in_minimum_number_of_operations() {
         // Arrange
         Task1769 task1769 = new Task1769();
         String boxes = "110";
