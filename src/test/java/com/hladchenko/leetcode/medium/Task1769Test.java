@@ -19,5 +19,4 @@ public class Task1769Test {
         Assert.assertArrayEquals(new int[]{1, 1, 3}, result);
         Assert.assertArrayEquals(new int[]{11, 8, 5, 4, 3, 4}, result2);
     }
-
 }
