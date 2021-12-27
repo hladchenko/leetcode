@@ -11,22 +11,24 @@ public class Task1302 {
     public int deepestLeavesSum(TreeNode root) {
         maxValue = 0;
         maxDepth = 0;
-        getDeepestElement(root, 0);
+        sumDeepestElements(root, 0);
         return maxValue;
     }
 
-    private void getDeepestElement(TreeNode root, int depth) {
+    private void sumDeepestElements(TreeNode root, int depth) {
         if (root.left != null) {
-            getDeepestElement(root.left, depth + 1);
+            sumDeepestElements(root.left, depth + 1);
         }
         if (root.right != null) {
-            getDeepestElement(root.right, depth + 1);
+            sumDeepestElements(root.right, depth + 1);
         }
-        if (depth > maxDepth) {
-            maxValue = root.val;
-            maxDepth = depth;
-        } else if (depth == maxDepth) {
-            maxValue += root.val;
+        if (root.left == null && root.right == null) {
+            if (depth > maxDepth) {
+                maxValue = root.val;
+                maxDepth = depth;
+            } else if (depth == maxDepth) {
+                maxValue += root.val;
+            }
         }
     }
 }
