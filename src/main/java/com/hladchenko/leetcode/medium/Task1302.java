@@ -5,8 +5,29 @@
 package com.hladchenko.leetcode.medium;
 
 public class Task1302 {
+
+    int maxValue, maxDepth;
+
     public int deepestLeavesSum(TreeNode root) {
-        throw new RuntimeException("Task is not completed!");
+        maxValue = 0;
+        maxDepth = 0;
+        getDeepestElement(root, 0);
+        return maxValue;
+    }
+
+    private void getDeepestElement(TreeNode root, int depth) {
+        if (root.left != null) {
+            getDeepestElement(root.left, depth + 1);
+        }
+        if (root.right != null) {
+            getDeepestElement(root.right, depth + 1);
+        }
+        if (depth > maxDepth) {
+            maxValue = root.val;
+            maxDepth = depth;
+        } else if (depth == maxDepth) {
+            maxValue += root.val;
+        }
     }
 }
 
