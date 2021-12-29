@@ -35,7 +35,6 @@ public class Task1678 {
             sb.append(charArr[i]);
             i++;
         }
-
         return sb.toString();
     }
 
