@@ -1,3 +1,12 @@
+/*
+    You own a Goal Parser that can interpret a string command.
+    The command consists of an alphabet of "G", "()" and/or "(al)" in some order.
+    The Goal Parser will interpret "G" as the string "G", "()" as the string "o", and "(al)" as the string "al".
+    The interpreted strings are then concatenated in the original order.
+
+    Given the string command, return the Goal Parser's interpretation of command.
+    https://leetcode.com/problems/goal-parser-interpretation/
+ */
 package com.hladchenko.leetcode.easy;
 
 public class Task1678 {
@@ -31,8 +40,6 @@ public class Task1678 {
     }
 
     public String interpret2dApproach(String command) {
-        command = command.replaceAll("\\(al\\)", "al");
-        command = command.replaceAll("\\(\\)", "o");
-        return command;
+        return command.replaceAll("\\(al\\)", "al").replaceAll("\\(\\)", "o");
     }
 }
