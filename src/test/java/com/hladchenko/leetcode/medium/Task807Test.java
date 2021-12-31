@@ -15,9 +15,13 @@ public class Task807Test {
         // When
         int actual = task807.maxIncreaseKeepingSkyline(grid);
         int actual2 = task807.maxIncreaseKeepingSkyline(grid2);
+        int actual3 = task807.maxIncreaseKeepingSkylineSecondApproach(grid);
+        int actual4 = task807.maxIncreaseKeepingSkylineSecondApproach(grid2);
 
         // Then
         Assert.assertEquals(35, actual);
         Assert.assertEquals(0, actual2);
+        Assert.assertEquals(35, actual3);
+        Assert.assertEquals(0, actual4);
     }
 }
