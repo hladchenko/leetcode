@@ -11,7 +11,20 @@ package com.hladchenko.leetcode.easy;
 public class Task1221 {
 
     public int balancedStringSplit(String s) {
-        // TODO:
-        return 0;
+        int count = 0, left = 0, right = 0;
+        char[] arr = s.toCharArray();
+        for (char c : arr) {
+            if (c == 'L') {
+                left++;
+            } else {
+                right++;
+            }
+            if (right == left && right != 0) {
+                count++;
+                left = 0;
+                right = 0;
+            }
+        }
+        return count;
     }
 }
