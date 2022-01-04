@@ -12,6 +12,8 @@
  */
 package com.hladchenko.leetcode.medium;
 
+import com.hladchenko.leetcode.common.TreeNode;
+
 public class Task1379 {
 
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {

@@ -7,6 +7,8 @@
  */
 package com.hladchenko.leetcode.medium;
 
+import com.hladchenko.leetcode.common.TreeNode;
+
 public class Task1315 {
 
     public int sumEvenGrandparent(TreeNode root) {

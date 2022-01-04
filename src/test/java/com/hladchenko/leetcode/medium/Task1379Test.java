@@ -1,6 +1,6 @@
 package com.hladchenko.leetcode.medium;
 
-import com.sun.source.tree.Tree;
+import com.hladchenko.leetcode.common.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 

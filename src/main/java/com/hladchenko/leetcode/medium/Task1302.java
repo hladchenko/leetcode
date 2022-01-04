@@ -4,6 +4,8 @@
  */
 package com.hladchenko.leetcode.medium;
 
+import com.hladchenko.leetcode.common.TreeNode;
+
 public class Task1302 {
 
     int maxValue, maxDepth;
@@ -30,24 +32,5 @@ public class Task1302 {
                 maxValue += root.val;
             }
         }
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
