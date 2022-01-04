@@ -19,10 +19,8 @@ public class Task1221 {
             } else {
                 right++;
             }
-            if (right == left && right != 0) {
+            if (right == left) {
                 count++;
-                left = 0;
-                right = 0;
             }
         }
         return count;
