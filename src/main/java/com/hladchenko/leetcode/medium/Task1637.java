@@ -22,10 +22,28 @@ public class Task1637 {
                 .toArray();
 
         int max = 0;
-        for (int i = 1; i < xPoints.length; i++){
+        for (int i = 1; i < xPoints.length; i++) {
             int difference = xPoints[i] - xPoints[i - 1];
             if (difference > max) {
                 max = difference;
+            }
+        }
+        return max;
+    }
+
+    public int maxWidthOfVerticalAreaSecondApproach(int[][] points) {
+        int[] xPoints = new int[points.length];
+        for (int i = 0; i < points.length; i++) {
+            xPoints[i] = points[i][0];
+        }
+
+        Arrays.sort(xPoints);
+
+        int max = 0;
+        for (int j = 1; j < xPoints.length; j++) {
+            int width = xPoints[j] - xPoints[j - 1];
+            if (width > max) {
+                max = width;
             }
         }
         return max;
