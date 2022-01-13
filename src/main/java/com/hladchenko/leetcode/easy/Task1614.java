@@ -31,6 +31,6 @@ public class Task1614 {
                 depth--;
             }
         }
-        return depth >= 0 ? max : 0;
+        return depth == 0 ? max : 0;
     }
 }
