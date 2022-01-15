@@ -29,4 +29,15 @@ public class Task654Test {
 
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void constructMaximumBinaryTreeThirdTest() {
+        Task654 task654 = new Task654();
+        int[] nums = {1, 2, 3};
+        TreeNode expected = new TreeNode(3, new TreeNode(2, new TreeNode(1), null), null);
+
+        TreeNode result = task654.leetcodeSolution(nums);
+
+        Assert.assertEquals(expected, result);
+    }
 }
