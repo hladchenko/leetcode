@@ -17,7 +17,7 @@ public class Task1588Test {
         int result3 = task1588.sumOddLengthSubarrays(arr3);
 
         Assert.assertEquals(58, result);
-        Assert.assertEquals(3, result);
-        Assert.assertEquals(66, result);
+        Assert.assertEquals(3, result2);
+        Assert.assertEquals(66, result3);
     }
 }

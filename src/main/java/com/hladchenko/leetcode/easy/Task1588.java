@@ -11,7 +11,18 @@ package com.hladchenko.leetcode.easy;
 public class Task1588 {
 
     public int sumOddLengthSubarrays(int[] arr) {
-
-        return 0;
+        int sum = 0;
+        for (int i = 1; i <= arr.length; i++) {
+            if (i % 2 == 1) {
+                for (int j = 0; j < arr.length; j++) {
+                    if (i + j <= arr.length) {
+                        for (int y = 0; y < i; y++) {
+                            sum += arr[j + y];
+                        }
+                    }
+                }
+            }
+        }
+        return sum;
     }
 }
