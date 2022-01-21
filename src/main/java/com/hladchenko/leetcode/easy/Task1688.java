@@ -14,6 +14,6 @@ package com.hladchenko.leetcode.easy;
 public class Task1688 {
 
   public int numberOfMatches(int n) {
-    return 0;
+    return n - 1;
   }
 }
