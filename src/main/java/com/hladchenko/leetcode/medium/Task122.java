@@ -10,6 +10,15 @@ package com.hladchenko.leetcode.medium;
 public class Task122 {
 
     public int maxProfit(int[] prices) {
-        return 0;
+        int profit = 0;
+        int last = prices[0];
+        for (int price : prices) {
+            if (last < price) {
+                profit += price - last;
+            }
+
+            last = price;
+        }
+        return profit;
     }
 }
