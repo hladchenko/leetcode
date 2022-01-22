@@ -16,7 +16,6 @@ public class Task122 {
             if (last < price) {
                 profit += price - last;
             }
-
             last = price;
         }
         return profit;
