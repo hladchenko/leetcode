@@ -14,6 +14,6 @@ public class Task11 {
 
     public int maxArea(int[] height) {
         //TODO
-        return 0
+        return 0;
     }
 }
