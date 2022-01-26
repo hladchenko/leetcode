@@ -31,4 +31,31 @@ public class Task941Test {
 
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void validMountainArray01212ReturnsFalse() {
+        Task941 task941 = new Task941();
+
+        boolean result = task941.validMountainArray(new int[]{0, 1, 2, 1, 2});
+
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void validMountainArray44321ReturnsFalse() {
+        Task941 task941 = new Task941();
+
+        boolean result = task941.validMountainArray(new int[]{4, 4, 3, 2, 1});
+
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void validMountainArray67786ReturnsFalse() {
+        Task941 task941 = new Task941();
+
+        boolean result = task941.validMountainArray(new int[]{6, 7, 7, 8, 6});
+
+        Assert.assertFalse(result);
+    }
 }

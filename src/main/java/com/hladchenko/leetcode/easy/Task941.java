@@ -7,6 +7,16 @@ package com.hladchenko.leetcode.easy;
 public class Task941 {
 
     public boolean validMountainArray(int[] arr) {
-        return false;
+        if (arr.length < 3 || arr[0] >= arr[1]) {
+            return false;
+        }
+        boolean decrease = false;
+        for (int i = 2; i < arr.length; i++) {
+            if (arr[i - 1] == arr[i]) return false;
+            boolean decreasing = arr[i - 1] > arr[i];
+            if (decreasing && !decrease) { decrease = true; }
+            else if (!decreasing && decrease) return false;
+        }
+        return decrease;
     }
 }
