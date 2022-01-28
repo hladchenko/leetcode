@@ -1,5 +1,7 @@
 package com.hladchenko.leetcode.easy;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -15,6 +17,13 @@ import java.util.List;
 public class Task2089 {
 
     public List<Integer> targetIndices(int[] nums, int target) {
-        return null;
+        List<Integer> indexes = new ArrayList<>();
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                indexes.add(i);
+            }
+        }
+        return indexes;
     }
 }
