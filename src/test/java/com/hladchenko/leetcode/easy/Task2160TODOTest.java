@@ -3,9 +3,9 @@ package com.hladchenko.leetcode.easy;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Task2160Test {
+public class Task2160TODOTest {
 
-    Task2160 task2160 = new Task2160();
+    Task2160TODO task2160 = new Task2160TODO();
 
     @Test
     public void minimumSum() {

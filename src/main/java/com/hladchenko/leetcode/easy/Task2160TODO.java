@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Task2160 {
+public class Task2160TODO {
 
     //TODO: debug and find a problem
+
+
+
     public int minimumSum(int num) {
         String[] numArr = String.valueOf(num).split("");
         List<String> numList = new ArrayList<>();
